@@ -8,6 +8,7 @@ import {Router} from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   @Output() sidenavToggle = new EventEmitter<void>();
+  public icon = 'menu';
 
   constructor(
     private route: Router,
@@ -16,8 +17,11 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onToggleSidenav(): void {
-    this.sidenavToggle.emit();
+  menuOpened(): void {
+    this.icon = 'close';
+  }
+  menuClosed(): void {
+    this.icon = 'menu';
   }
 
 }

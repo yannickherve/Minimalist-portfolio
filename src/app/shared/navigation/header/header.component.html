@@ -10,10 +10,11 @@
   <!--        </nav>-->
 
   <div class="hide_menu">
-    <button class="big"  [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" mat-icon-button>
-      <mat-icon inline="true">menu</mat-icon>
+    <button class="big" (menuOpened)="menuOpened()" (menuClosed)="menuClosed()"
+            [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu"
+            mat-icon-button>
+      <mat-icon inline="true">{{ icon }}</mat-icon>
     </button>
-    <!--          <mat-icon class="big">menu</mat-icon>-->
     <mat-menu #menu="matMenu" xPosition="after">
       <div class="menu-container">
         <a routerLink="/">HOME</a>

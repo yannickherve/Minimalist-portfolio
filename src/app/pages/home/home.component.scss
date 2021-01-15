@@ -1,0 +1,61 @@
+@import 'libs/variables';
+@import 'modules/icons';
+@import 'modules/buttons';
+@import 'libs/functions';
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "home_hero"
+    "home_about_me"
+}
+
+.home_hero {
+  grid-area: home_hero;
+  //border: 1px solid yellow;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: rem(17);
+}
+
+.home_hero_img {
+  width: 100%;
+  //background: url('~src/assets/images/homepage/mobile/image-homepage-hero@2x.jpg') top center / cover no-repeat ;
+}
+
+.home_hero_title {
+  h2 {
+    padding-bottom: rem(28);
+  }
+  span {
+    margin-left: 37px;
+  }
+}
+
+//about me
+.home_about_me {
+  grid-area: home_about_me;
+  margin: rem(96) 0 25px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: rem(16);
+}
+
+
+.home_about_me_body {
+  padding-top: rem(30);
+  border-bottom: 1px solid $color-primary-dark-blue;
+  border-top: 1px solid $color-primary-dark-blue;
+
+  p {
+    padding: rem(28) 0 rem(15) 0;
+  }
+  #about-button {
+    width: rem(202);
+    margin-bottom: rem(54);
+  }
+}

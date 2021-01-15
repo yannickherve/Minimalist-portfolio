@@ -1,6 +1,39 @@
+@import 'libs/functions';
+@import 'libs/variables';
+
 .footer-container {
-  background-color: #11999e;
-  //height: 5vh;
-  padding: 20px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(20);
+  width: 100%;
+}
+
+.footer-block-left {
+  font-size: rem(12);
+  letter-spacing: rem(2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(20);
+}
+
+.footer-block-right .socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: rem(12);
+}
+.socials a:hover {
+  color: $color-primary-cyan;
+
+  .socials-icons  {
+    fill: $color-primary-cyan;
+  }
+}
+
+.footer-nav a:hover {
+  color: $color-primary-cyan;
 }

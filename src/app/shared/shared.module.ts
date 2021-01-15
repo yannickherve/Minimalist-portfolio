@@ -7,9 +7,10 @@ import {CommonModule} from '@angular/common';
 import { SidenavLeftComponent } from './navigation/sidenav-left/sidenav-left.component';
 import {HeaderComponent} from './navigation/header/header.component';
 import {FooterComponent} from './navigation/footer/footer.component';
+import {ContactBannerComponent} from '../modules/contact-banner/contact-banner.component';
 
 @NgModule({
-  declarations: [SidenavLeftComponent, HeaderComponent, FooterComponent],
+  declarations: [SidenavLeftComponent, HeaderComponent, FooterComponent, ContactBannerComponent],
   imports: [
     RouterModule,
     MaterialModule,
@@ -22,7 +23,8 @@ import {FooterComponent} from './navigation/footer/footer.component';
     FlexLayoutModule,
     SidenavLeftComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactBannerComponent
   ]
 })
 export class SharedModule { }
