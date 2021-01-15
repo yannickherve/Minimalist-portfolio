@@ -1,0 +1,7 @@
+$medium: 768px!default;
+$large: 1000px!default;
+
+$medium-up: "(min-width: #{$medium})";
+$medium-down: "(max-width: #{$medium})";
+$large-up: "(min-width: #{$large})";
+$large-down: "(max-width: #{$large})";

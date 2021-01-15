@@ -1,0 +1,58 @@
+@import 'libs/functions';
+
+// Fonts family
+$base-font-family: 'Public Sans', sans-serif;
+$heading-font-family: 'Ibarra Real Nova', serif;
+
+// Font weight
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+
+// line height
+$base-line-height: 30;
+
+//font size
+$headingH1-font-size: 50;
+$headingH2-font-size: 40;
+$headingH1-font-size: 32;
+
+
+h1 {
+  font-family: $heading-font-family;
+  font-size: rem(50);
+  line-height: rem(50);
+  letter-spacing: -0.45px;
+  font-weight: $font-weight-bold;
+}
+
+h2 {
+  font-family: $heading-font-family;
+  font-size: rem(40);
+  line-height: rem(42);
+  letter-spacing: -0.36px;
+  font-weight: $font-weight-bold;
+}
+
+h3 {
+  font-family: $heading-font-family;
+  font-size: rem(32);
+  line-height: rem(36);
+  letter-spacing: -0.29px;
+  font-weight: $font-weight-regular;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+

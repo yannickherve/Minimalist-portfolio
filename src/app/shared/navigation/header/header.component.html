@@ -1,0 +1,25 @@
+<mat-toolbar class="header-navbar" color="primary">
+  <div fxHide.gt-xs>
+    <button (click)="onToggleSidenav()" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+  <div fxLayout="row">
+    <a routerLink="/" routerLinkActive>
+      <span class="logo">SUPER FOOD</span>
+<!--      test-->
+      <mat-icon id="my-menu">account_circle</mat-icon>
+    </a>
+  </div>
+  <div fxFlex fxHide.gt-xs fxLayout="row" fxLayoutAlign="flex-end">
+  </div>
+  <div fxFlex fxHide.xs fxLayout fxLayoutAlign="flex-end">
+    <mat-nav-list class="sidenav-content-list" fxLayout>
+      <a [routerLink]="['/users']" mat-list-item >User Dashboard</a>
+      <a [routerLink]="['/moderator']" mat-list-item >Moderator</a>
+    </mat-nav-list>
+  </div>
+</mat-toolbar>
+
+

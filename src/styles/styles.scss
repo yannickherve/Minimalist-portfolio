@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'libs/variables';
+@import 'libs/functions';
+@import 'libs/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'modules/buttons';
+@import 'modules/icons';
+
+
+html {
+  height: $full-height-percent;
+  font-size: $base-font-size;
+}
+
+body {
+  height: $full-height-percent;
+  margin: 0;
+  font-family: $base-font-family;
+  line-height: rem($base-line-height);
+  font-weight: $font-weight-regular;
+  color: $color-primary-dark-blue;
+  background-color: $color-secondary-light-gray;
+
+  //hack temporaire
+  //background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
+}
+
+
+
+
+

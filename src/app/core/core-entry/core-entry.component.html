@@ -1,0 +1,89 @@
+<ng-container>
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="topBar">
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="Site-logo">
+        </div>
+
+        <!--        <nav class="menu">-->
+        <!--          <a routerLink="/">HOME</a>-->
+        <!--          <a routerLink="/">PORTFOLIO</a>-->
+        <!--          <a routerLink="/">CONTACT ME</a>-->
+        <!--        </nav>-->
+
+        <button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" mat-icon-button>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu" xPosition="after">
+          <div class="notification-container">
+            <a routerLink="/">HOME</a>
+            <a routerLink="/">PORTFOLIO</a>
+            <a routerLink="/">CONTACT ME</a>
+          </div>
+        </mat-menu>
+      </div>
+    </header>
+    <main class="page-body">
+      <div class="page-container">
+        <section class="home_hero">
+          <div class="home_hero_img"></div>
+          <div class="home_hero_title">
+            <h1>Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+            <a routerLink="/" class="btn btn--primary">
+              <div class="btn--block_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14">
+                  <g class="btn_svg" fill="none" fill-rule="evenodd" stroke="#5FB4A2">
+                    <path d="M0 9l8 4 8-4"/>
+                    <path opacity=".5" d="M0 5l8 4 8-4"/>
+                    <path opacity=".25" d="M0 1l8 4 8-4"/>
+                  </g>
+                </svg>
+              </div>
+              <span>About me</span>
+            </a>
+          </div>
+        </section>
+        <section class="home_about_me">
+          <div class="home_about_me_img">
+            <img src="assets/images/homepage/mobile/image-homepage-profile.jpg" alt="Profile">
+          </div>
+
+          <hr>
+
+          <div class="home_about_me_body">
+            <h2>About Me</h2>
+            <p>
+              I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
+              accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I
+              mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy
+              working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love
+              being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+            </p>
+            <div class="btn">
+              <a routerLink="/" class="btn btn--secondary" >
+                <span>GO to portfolio</span>
+              </a>
+            </div>
+          </div>
+        </section>
+        <hr>
+
+        <section class="contact_banner">
+          <h2>Interested in doing a project together?</h2>
+          <div class="btn">
+            <a routerLink="/" class="btn btn--secondary" >
+              <span>Contact me</span>
+            </a>
+          </div>
+
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="page-footer" style="background-color: blue">
+      Sticky footer im
+    </footer>
+  </div>
+</ng-container>

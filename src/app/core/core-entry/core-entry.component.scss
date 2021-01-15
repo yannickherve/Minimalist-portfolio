@@ -1,0 +1,62 @@
+//@import 'libs/variables';
+//@import 'modules/buttons';
+//@import 'modules/icons';
+
+.wrapper {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  grid-template-areas:
+    "header"
+    "main"
+    "banner"
+    "footer";
+}
+
+.page-header {
+  grid-area: header;
+  background-color: yellow;
+}
+.page-body {
+  grid-area: main;
+}
+.page-footer {
+  grid-area: footer;
+}
+::ng-deep.mat-menu-panel {
+  max-width: none !important;
+  margin-left: 30px;
+  background-color: #33323D;
+  width: 223px;
+  height: 186px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 50px;
+  font-size: 12px;
+  //color: $color-primary-Grayish-dark-blue;
+}
+.notification-container{
+  display: flex;
+  //flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: #FFFFFF;
+}
+.notification-container a:hover {
+  color: green;
+}
+
+.topBar {
+  border: 1px solid red;
+}
+.home_hero {
+  border: 1px solid black;
+}
+.home_hero_img {
+  min-width: 311px;
+  min-height: 271px;
+  background: url('~src/assets/images/homepage/mobile/image-homepage-hero.jpg') top center / contain no-repeat;
+}
