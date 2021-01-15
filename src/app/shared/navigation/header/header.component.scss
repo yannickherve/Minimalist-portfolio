@@ -1,9 +1,43 @@
-.header-navbar {
-  //height: 30px;
+@import 'libs/variables';
+@import 'modules/icons';
+@import 'libs/functions';
+
+.page-header {
+  grid-area: header;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  height: 32px;
+  margin-bottom: 40px;
 }
 
-@media (min-width: 980px) {
-  #my-menu {
-    display: none;
-  }
+.logo {
+  text-align: center;
+}
+
+::ng-deep.mat-menu-panel {
+  max-width: none !important;
+  margin-left: 30px;
+  background-color: $color-primary-Grayish-dark-blue;
+  width: 223px;
+  height: 186px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 50px;
+  font-size: 12px;
+}
+.menu-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  color: #FFFFFF;
+}
+.menu-container a:hover {
+  color: green;
 }

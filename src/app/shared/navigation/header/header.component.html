@@ -1,25 +1,25 @@
-<mat-toolbar class="header-navbar" color="primary">
-  <div fxHide.gt-xs>
-    <button (click)="onToggleSidenav()" mat-icon-button>
-      <mat-icon>menu</mat-icon>
+<header class="page-header">
+  <div class="logo">
+    <img src="assets/images/logo.svg" alt="Site-logo">
+  </div>
+
+  <!--        <nav class="menu">-->
+  <!--          <a routerLink="/">HOME</a>-->
+  <!--          <a routerLink="/">PORTFOLIO</a>-->
+  <!--          <a routerLink="/">CONTACT ME</a>-->
+  <!--        </nav>-->
+
+  <div class="hide_menu">
+    <button class="big"  [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" mat-icon-button>
+      <mat-icon inline="true">menu</mat-icon>
     </button>
+    <!--          <mat-icon class="big">menu</mat-icon>-->
+    <mat-menu #menu="matMenu" xPosition="after">
+      <div class="menu-container">
+        <a routerLink="/">HOME</a>
+        <a routerLink="/">PORTFOLIO</a>
+        <a routerLink="/">CONTACT ME</a>
+      </div>
+    </mat-menu>
   </div>
-
-  <div fxLayout="row">
-    <a routerLink="/" routerLinkActive>
-      <span class="logo">SUPER FOOD</span>
-<!--      test-->
-      <mat-icon id="my-menu">account_circle</mat-icon>
-    </a>
-  </div>
-  <div fxFlex fxHide.gt-xs fxLayout="row" fxLayoutAlign="flex-end">
-  </div>
-  <div fxFlex fxHide.xs fxLayout fxLayoutAlign="flex-end">
-    <mat-nav-list class="sidenav-content-list" fxLayout>
-      <a [routerLink]="['/users']" mat-list-item >User Dashboard</a>
-      <a [routerLink]="['/moderator']" mat-list-item >Moderator</a>
-    </mat-nav-list>
-  </div>
-</mat-toolbar>
-
-
+</header>

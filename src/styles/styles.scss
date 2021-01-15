@@ -23,10 +23,10 @@ body {
   line-height: rem($base-line-height);
   font-weight: $font-weight-regular;
   color: $color-primary-dark-blue;
-  background-color: $color-secondary-light-gray;
+  //background-color: $color-secondary-light-gray;
 
   //hack temporaire
-  //background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
+  background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
 }
 
 
