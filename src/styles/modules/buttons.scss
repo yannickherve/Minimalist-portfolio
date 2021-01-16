@@ -11,6 +11,7 @@
   font-size: rem(12);
   vertical-align: middle;
   align-items: center;
+  letter-spacing: rem(2);
 }
 
 .btn--primary {
@@ -56,7 +57,6 @@
 
 .btn--secondary {
   min-width: rem(162);
-  background-color: #FFFFFF;
   height: rem(48);
   font-weight: rem(12);
   letter-spacing: rem(2);
@@ -64,6 +64,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
 
   border: 1px solid $color-primary-Grayish-dark-blue;
 

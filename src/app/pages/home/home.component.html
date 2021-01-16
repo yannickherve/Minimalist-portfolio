@@ -1,6 +1,12 @@
 <div class="home-container">
   <section class="home_hero">
-    <div class="home_hero_img"><img src="assets/images/homepage/mobile/image-homepage-hero@2x.jpg" alt=""></div>
+    <div class="home_hero_img">
+      <picture>
+        <source media="(min-width:1025px)" srcset="assets/images/homepage/desktop/image-homepage-hero@2x.jpg">
+        <source media="(min-width: 600px)" srcset="assets/images/homepage/tablet/image-homepage-hero@2x.jpg">
+        <img src="assets/images/homepage/mobile/image-homepage-hero@2x.jpg" alt="Hero image">
+      </picture>
+    </div>
     <div class="home_hero_title">
       <h2>Hey, I’m Alex Spencer and I love building beautiful websites</h2>
       <a routerLink="/" class="btn btn--primary">
@@ -19,7 +25,11 @@
   </section>
   <section class="home_about_me">
     <div class="home_about_me_img">
-      <img src="assets/images/homepage/mobile/image-homepage-profile.jpg" alt="Profile">
+      <picture>
+        <source media="(min-width:1025px)" srcset="assets/images/homepage/desktop/image-homepage-profile@2x.jpg">
+        <source media="(min-width: 768px)" srcset="assets/images/homepage/tablet/image-homepage-profile@2x.jpg">
+        <img src="assets/images/homepage/mobile/image-homepage-profile@2x.jpg" alt="My profile image">
+      </picture>
     </div>
 
     <div class="home_about_me_body">

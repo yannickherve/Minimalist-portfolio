@@ -17,20 +17,23 @@
 
 .page-body {
   grid-area: main;
-  padding: rem(32) rem(32) 0 rem(32);
+  margin-top: rem(40);
+  //padding: rem(32) rem(32) 0 rem(32);
 }
+
 .contact_banner {
   grid-area: contact_banner;
 }
+
 .page-footer {
   grid-area: footer;
   background-color: $color-primary-Grayish-dark-blue;
   color: #FFFFFF;
 
-  padding: 29px 70px;
+  padding: rem(56) 0;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-content: center;
 }
 
 

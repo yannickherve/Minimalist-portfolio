@@ -23,9 +23,16 @@ body {
   line-height: rem($base-line-height);
   font-weight: $font-weight-regular;
   color: $color-primary-dark-blue;
-  background-color: $color-secondary-light-gray;
+  background-color: $color-secondary-very-light-gray;
 
   //background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
+}
+
+@media (min-width: 768px) {
+  //body {
+  //
+  //  background: url('../assets/tablet_home_screenshoot.png') top center / cover no-repeat $color-secondary-light-gray;
+  //}
 }
 
 
