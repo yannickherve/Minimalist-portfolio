@@ -12,12 +12,12 @@
 
 
 html {
-  height: $full-height-percent;
+  height: 100%;
   font-size: $base-font-size;
 }
 
 body {
-  height: $full-height-percent;
+  height: 100%;
   margin: 0;
   font-family: $base-font-family;
   line-height: rem($base-line-height);
@@ -26,6 +26,7 @@ body {
   background-color: $color-secondary-very-light-gray;
 
   //background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
+  //linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6))
 }
 
 @media (min-width: 768px) {
