@@ -6,9 +6,11 @@
     <app-header></app-header>
 
     <main class="page-body">
-      <router-outlet></router-outlet>
+      <ng-container>
+        <router-outlet></router-outlet>
 
-      <app-contact-banner></app-contact-banner>
+        <app-contact-banner></app-contact-banner>
+      </ng-container>
 
     </main>
 
