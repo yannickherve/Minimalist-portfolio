@@ -15,7 +15,7 @@
   //padding: 0 rem(32);
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .page-body {
     //padding: 0 rem(40);
   }
