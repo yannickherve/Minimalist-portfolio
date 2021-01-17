@@ -68,9 +68,11 @@
 
   .menu {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    gap: rem(42);
+    grid-column-gap: rem(42);
+    //gap: rem(42);
     letter-spacing: rem(2);
     font-size: rem(12);
   }
