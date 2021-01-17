@@ -69,7 +69,8 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    height: 80px;
+    //height: rem(80);
+    height: 100%;
   }
   .footer-container {
     padding: rem(24) rem(39);
