@@ -3,33 +3,37 @@
 @import 'libs/functions';
 
 .page-header {
-  margin-top: rem(32);
+  //margin-top: rem(32);
+  //background-color: rgb(75, 70, 74);
+  padding: rem(32) rem(32) 0 rem(32);
 }
 
 .header_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-content: center;
   align-items: center;
-  height: rem(32);
-  padding: 0 rem(32);
+  //height: rem(32);
+  //padding: 0 rem(32);
+  //background-color: blue;
+  max-height: rem(32);
 }
 
-.logo {
-  text-align: center;
-}
+//.logo {
+//  text-align: center;
+//}
 
 ::ng-deep.mat-menu-panel {
-  max-width: none !important;
-  margin-left: 30px;
+  //max-width: none !important;
+  //margin-left: rem(30);
   background-color: $color-primary-Grayish-dark-blue;
+  max-width: 100%;
   width: 223px;
-  height: 186px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 35px 50px;
+  padding: rem(40) rem(63);
   font-size: 12px;
 }
 
@@ -47,7 +51,7 @@
 }
 
 .hide_menu {
-  padding-bottom: 6px;
+  padding-bottom: rem(6);
 }
 .menu {
   display: none;
