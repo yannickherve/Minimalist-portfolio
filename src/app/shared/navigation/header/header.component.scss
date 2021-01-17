@@ -2,62 +2,82 @@
 @import 'modules/icons';
 @import 'libs/functions';
 
-.page-header {
-  //margin-top: rem(32);
-  //background-color: rgb(75, 70, 74);
-  padding: rem(32) rem(32) 0 rem(32);
-}
-
 .header_container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  //height: rem(32);
-  //padding: 0 rem(32);
-  //background-color: blue;
   max-height: rem(32);
 }
 
-//.logo {
-//  text-align: center;
-//}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .page-header {
+    //margin-top: rem(32);
+    //background-color: rgb(75, 70, 74);
+    padding: rem(32) rem(32) 0 rem(32);
+  }
 
-::ng-deep.mat-menu-panel {
-  //max-width: none !important;
-  //margin-left: rem(30);
-  background-color: $color-primary-Grayish-dark-blue;
-  max-width: 100%;
-  width: 223px;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: rem(40) rem(63);
-  font-size: 12px;
+  .header_container {
+    background-color: red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    //height: rem(32);
+    //padding: 0 rem(32);
+    //background-color: blue;
+    max-height: rem(32);
+  }
+
+
+  //.logo {
+  //  text-align: center;
+  //}
+
+  ::ng-deep.mat-menu-panel {
+    //max-width: none !important;
+    //margin-left: rem(30);
+    background-color: $color-primary-Grayish-dark-blue;
+    max-width: 100%;
+    width: 223px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: rem(40) rem(63);
+    font-size: 12px;
+  }
+
+  .menu-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    color: #FFFFFF;
+  }
+
+  .menu-container a:hover {
+    color: green;
+  }
+
+  .hide_menu {
+    //padding-bottom: rem(6);
+  }
+  .menu {
+    display: none;
+  }
 }
 
-.menu-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  color: #FFFFFF;
-}
-
-.menu-container a:hover {
-  color: green;
-}
-
-.hide_menu {
-  padding-bottom: rem(6);
-}
-.menu {
-  display: none;
-}
 
 @media only screen and (min-width: 600px)  {
+  .page-header {
+    //margin-top: rem(32);
+    //background-color: rgb(75, 70, 74);
+    padding: rem(32) rem(32) 0 rem(32);
+  }
+
   .hide_menu  {
     display: none;
   }
@@ -75,6 +95,7 @@
     //gap: rem(42);
     letter-spacing: rem(2);
     font-size: rem(12);
+
   }
 
 }

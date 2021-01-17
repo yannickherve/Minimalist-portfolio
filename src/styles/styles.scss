@@ -28,9 +28,9 @@ body {
   line-height: rem($base-line-height);
   font-weight: $font-weight-regular;
   color: $color-primary-dark-blue;
-  //background-color: $color-secondary-very-light-gray;
+  background-color: $color-secondary-very-light-gray;
 
-  background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
+  //background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
   //linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6))
 }
 
