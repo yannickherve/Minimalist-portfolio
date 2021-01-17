@@ -3,7 +3,7 @@
 
 .page-footer {
   background-color: $color-primary-Grayish-dark-blue;
-  height: 354px;
+  //height: 354px;
   color: #FFFFFF;
 
   display: flex;
@@ -19,6 +19,7 @@
   justify-content: center;
   align-items: center;
   gap: rem(40);
+  padding-top: rem(30);
 }
 
 .footer-block-left {
