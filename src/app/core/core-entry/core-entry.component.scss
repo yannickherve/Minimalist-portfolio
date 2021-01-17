@@ -10,15 +10,26 @@
 
 }
 
+// .page-body {
+//   // margin-top: rem(40);
+//   //padding: 0 rem(32);
+// }
+
+.page-header,
+.page-footer {
+    background-color: rgb(75, 70, 74);
+    color: #fff;
+    padding: 20px;
+}
+
 .page-body {
-  margin-top: rem(40);
-  //padding: 0 rem(32);
+    padding: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  .page-body {
-    //padding: 0 rem(40);
-  }
+  // .page-body {
+  //   //padding: 0 rem(40);
+  // }
 
 }
 
