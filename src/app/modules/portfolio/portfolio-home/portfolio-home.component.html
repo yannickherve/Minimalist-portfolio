@@ -1,1 +1,125 @@
-<p>portfolio-home works!</p>
+<ng-container>
+  <div class="portfolio-container">
+    <section class="portfolio-manage">
+      <div class="manage-img">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="assets/images/portfolio/desktop/image-portfolio-manage@2x.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="assets/images/portfolio/tablet/image-portfolio-manage@2x.jpg"
+          />
+          <img
+            src="assets/images/portfolio/mobile/image-portfolio-manage@2x.jpg"
+            alt="Project manage"
+          />
+        </picture>
+      </div>
+      <div class="manage-body">
+        <h2>Manage</h2>
+        <p>
+          This project required me to build a fully responsive landing page to the designs provided.
+          I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity,
+          such as the testimonial slider.
+        </p>
+        <a id="manage-button" routerLink="/" class="btn--secondary">
+          <span>View Project</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="portfolio-bookmark">
+      <div class="bookmark-img">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="assets/images/portfolio/desktop/image-portfolio-bookmark@2x.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="assets/images/portfolio/tablet/image-portfolio-bookmark@2x.jpg"
+          />
+          <img
+            src="assets/images/portfolio/mobile/image-portfolio-bookmark@2x.jpg"
+            alt="Project bookmark"
+          />
+        </picture>
+      </div>
+      <div class="bookmark-body">
+        <h2>Bookmark</h2>
+        <p>
+          This project required me to build a fully responsive landing page to the designs provided. I
+          used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such
+          as the features section.
+        </p>
+        <a id="bookmark-button" routerLink="/" class="btn--secondary">
+          <span>View Project</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="portfolio-insure">
+      <div class="insure-img">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="assets/images/portfolio/desktop/image-portfolio-insure@2x.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="assets/images/portfolio/tablet/image-portfolio-insure@2x.jpg"
+          />
+          <img
+            src="assets/images/portfolio/mobile/image-portfolio-insure@2x.jpg"
+            alt="Project insure"
+          />
+        </picture>
+      </div>
+      <div class="insure-body">
+        <h2>Insure</h2>
+        <p>
+          This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive
+          landing page. The only JavaScript this project required was to enable the toggling of the
+          mobile navigation.
+        </p>
+        <a id="insure-button" routerLink="/" class="btn--secondary">
+          <span>View Project</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="portfolio-fylo">
+      <div class="fylo-img">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="assets/images/portfolio/desktop/image-portfolio-fylo@2x.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="assets/images/portfolio/tablet/image-portfolio-fylo@2x.jpg"
+          />
+          <img
+            src="assets/images/portfolio/mobile/image-portfolio-fylo@2x.jpg"
+            alt="Project insure"
+          />
+        </picture>
+      </div>
+      <div class="fylo-body">
+        <h2>Fylo</h2>
+        <p>
+          This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and
+          built it so that it was fully-responsive. I took a mobile-first approach and used modern
+          CSS like Flexbox and Grid for layout purposes.
+        </p>
+        <a id="fylo-button" routerLink="/" class="btn--secondary">
+          <span>View Project</span>
+        </a>
+      </div>
+    </section>
+  </div>
+  <app-page-banner></app-page-banner>
+
+</ng-container>
