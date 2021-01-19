@@ -9,6 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [HomeComponent, ContactComponent],
+  exports: [
+    HomeComponent
+  ],
   imports: [
     CommonModule,
     PageRoutingModule,

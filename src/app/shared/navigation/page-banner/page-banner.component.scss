@@ -1,0 +1,41 @@
+@import 'libs/variables';
+@import 'modules/buttons';
+@import 'libs/functions';
+@import 'libs/responsive';
+
+
+//banner bottom
+.page-banner {
+  margin: rem(105) auto rem(80) auto;
+}
+
+.banner_container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  grid-gap: rem(40);
+  text-align: center;
+
+  a {
+    margin: 0 auto;
+  }
+
+  .banner-separator {
+    display: none;
+  }
+}
+
+//768px
+@media #{$medium-up} {
+  .page-banner {
+    margin: rem(96) auto;
+  }
+}
+
+//1440px
+@media #{$XExtraLarge-up} {
+  .page-banner {
+    margin: rem(150) auto;
+  }
+}

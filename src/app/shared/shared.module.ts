@@ -7,10 +7,10 @@ import {CommonModule} from '@angular/common';
 import { SidenavLeftComponent } from './navigation/sidenav-left/sidenav-left.component';
 import {HeaderComponent} from './navigation/header/header.component';
 import {FooterComponent} from './navigation/footer/footer.component';
-import {ContactBannerComponent} from '../modules/contact-banner/contact-banner.component';
+import { PageBannerComponent } from './navigation/page-banner/page-banner.component';
 
 @NgModule({
-  declarations: [SidenavLeftComponent, HeaderComponent, FooterComponent, ContactBannerComponent],
+  declarations: [SidenavLeftComponent, HeaderComponent, FooterComponent, PageBannerComponent],
   imports: [
     RouterModule,
     MaterialModule,
@@ -24,7 +24,7 @@ import {ContactBannerComponent} from '../modules/contact-banner/contact-banner.c
     SidenavLeftComponent,
     HeaderComponent,
     FooterComponent,
-    ContactBannerComponent
+    PageBannerComponent
   ]
 })
 export class SharedModule { }
