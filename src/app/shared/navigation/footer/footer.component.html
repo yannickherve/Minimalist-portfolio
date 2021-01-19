@@ -13,9 +13,9 @@
       </div>
 
       <nav class="footer-nav">
-        <a href="#">Home</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact me</a>
+        <a routerLink="/" routerLinkActive="active">Home</a>
+        <a [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
+        <a [routerLink]="['/contact']" routerLinkActive="active">Contact me</a>
       </nav>
     </section>
 
