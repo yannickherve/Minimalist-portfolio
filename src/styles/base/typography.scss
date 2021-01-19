@@ -1,4 +1,5 @@
 @import 'libs/functions';
+@import 'libs/variables';
 
 // Fonts family
 $base-font-family: 'Public Sans', sans-serif;
@@ -15,6 +16,28 @@ $base-line-height: 30;
 $headingH1-font-size: 50;
 $headingH2-font-size: 40;
 $headingH1-font-size: 32;
+
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: $base-font-size;
+  height: 100%;
+}
+
+body {
+  font-family: $base-font-family;
+  color: $text-color;
+  font-weight: $font-weight-regular;
+  line-height: rem($base-line-height);
+  background-color: $color-secondary-very-light-gray;
+  margin: 0;
+}
 
 
 h1 {
@@ -44,16 +67,14 @@ h3 {
 a {
   color: inherit;
   text-decoration: none;
-  transition: background-color .3s;
+  transition: background-color .3s, color .3s;
   cursor: pointer;
 }
 
 img {
   max-width: 100%;
-  //width: 100%;
   height: auto;
 }
-
 
 
 

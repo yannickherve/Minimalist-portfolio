@@ -1,13 +1,3 @@
-/**
- * Variables
- * =================================
- * - Typography
- * - Breakpoints
- * - Paths
- * - Layout & Grid
- * - App-specific
- */
-
 // colors
 $color-primary-cyan: rgb(95, 180, 162);
 $color-primary-dark-blue: rgb(32, 58, 76);
@@ -18,6 +8,4 @@ $color-secondary-red: rgb(244, 48, 48);
 
 //primary button
 $block-svg-color: #000000;
-$text-color: blue;
-
-$full-height-percent: 100%;
+$text-color: $color-primary-dark-blue;

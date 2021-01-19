@@ -7,27 +7,35 @@
   cursor: pointer;
   outline: none;
   text-transform: uppercase;
-  //white-space: nowrap;
   font-size: rem(12);
   vertical-align: middle;
-  align-items: center;
+  text-align: center;
   letter-spacing: rem(2);
+
+  max-width: 100%;
+  transition: background-color 0.2s;
 }
 
 .btn--primary {
+  @extend .btn;
+
   width: rem(200);
   background-color: $color-primary-dark-blue;
-  height: rem(48);
+  // height: rem(48);
   display: flex;
   flex-direction: row;
   align-items: center;
+  align-content: space-around;
   color: #FFFFFF;
+
+  span {
+    padding-left: 10%;
+  }
 
   &:hover {
     .btn--block_svg {
       background-color: #55A191;
       color: white;
-      transition: background-color 0.2s;
     }
 
     background-color: $color-primary-cyan;
@@ -47,8 +55,10 @@
 
 .btn--block_svg {
   background-color: $block-svg-color;
-  height: rem(48);
+  width: 100%;
   width: rem(48);
+
+  height: rem(48);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,10 +66,15 @@
 
 
 .btn--secondary {
-  min-width: rem(162);
+  @extend .btn;
+
+  max-height: 100%;
+
+  width: rem(162);
   height: rem(48);
   font-weight: rem(12);
   letter-spacing: rem(2);
+
   display: flex;
   flex-direction: row;
   justify-content: center;

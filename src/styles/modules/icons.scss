@@ -13,15 +13,24 @@
 
 .big {
   font-size: 2rem;
-  padding-left: rem(10);
-}
-
-.logo {
-  width: rem(60);
-  height: rem(32);
-
+  color: $color-primary-Grayish-dark-blue;
 }
 
 .logo-footer {
   fill: #FFFFFF;
 }
+
+.socials-icons {
+  fill: #FFFFFF;
+  transition: .3s;
+}
+
+.logo {
+  width: rem(60);
+  height: rem(32);
+}
+
+.footer-svg {
+  fill: #FFFFFF;
+}
+
