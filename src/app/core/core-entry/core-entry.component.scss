@@ -2,6 +2,7 @@
 //@import 'modules/buttons';
 @import 'modules/icons';
 @import 'libs/functions';
+@import 'libs/responsive';
 
 .wrapper {
   min-height: 100%;
@@ -15,21 +16,34 @@
   margin-top: rem(40);
 }
 
-//.page-header,
-.page-footer {
-    background-color: rgb(75, 70, 74);
-    color: #fff;
-    padding: 20px;
+//768px
+@media #{$medium-up} {
+  .page-body {
+    padding: 0 rem(41);
+  }
 }
 
-.page-body {
-    padding: 20px;
+//992px
+@media #{$large-up}  {
+  .page-body {
+    padding: 0 rem(65);
+    margin-top: rem(47);
+  }
 }
 
-@media only screen and (min-width: 768px) {
-  // .page-body {
-  //   //padding: 0 rem(40);
-  // }
+//1200px
+@media #{$ExtraLarge-up} {
+  .page-body {
+    padding: 0 rem(80);
+    margin-top: rem(54);
+  }
+}
 
+//1440px
+@media #{$XExtraLarge-up} {
+  .page-body {
+    padding: 0 rem(165);
+    margin-top: rem(54);
+  }
 }
 
