@@ -1,4 +1,5 @@
 <div class="home-container">
+
   <section class="home_hero">
     <div class="home_hero_img">
       <picture>
@@ -20,7 +21,7 @@
       <h2>
         Hey, I’m Alex Spencer and I love building beautiful websites
       </h2>
-      <a href="#aboutMe" class="btn--primary">
+      <a [routerLink] = "['/']"  fragment="aboutMe" class="btn--primary">
         <div class="btn--block_svg">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +44,7 @@
       </a>
     </div>
   </section>
+
   <section class="home_about_me" id="aboutMe" data-aos="fade-up">
     <div class="home_about_me_img">
       <picture>
