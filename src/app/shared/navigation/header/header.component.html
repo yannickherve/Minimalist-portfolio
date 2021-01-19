@@ -4,9 +4,9 @@
       <img src="assets/images/logo.svg" alt="Site-logo">
     </div>
     <nav class="menu" id="menu">
-      <a routerLink="/" routerLinkActive="active">Home</a>
-      <a [routerLink]="['/portfolio']" routerLinkActive="active">Portfolio</a>
-      <a [routerLink]="['/contact']" routerLinkActive="active">Contact me</a>
+      <a routerLink="/home" routerLinkActive="active-link">Home</a>
+      <a [routerLink]="['/portfolio']" routerLinkActive="active-link">Portfolio</a>
+      <a [routerLink]="['/contact']" [routerLinkActive]="['active-link']">Contact me</a>
     </nav>
 
     <div class="hide_menu">
@@ -17,9 +17,9 @@
       </button>
       <mat-menu #menu="matMenu" xPosition="after" id="menu_mat">
         <div class="menu-container">
-          <a routerLink="/">Home</a>
-          <a [routerLink]="['/portfolio']">Portfolio</a>
-          <a [routerLink]="['/contact']">Contact me</a>
+          <a routerLink="/" [routerLinkActive]="['active-link']">Home</a>
+          <a [routerLink]="['/portfolio']" [routerLinkActive]="['active-link']">Portfolio</a>
+          <a [routerLink]="['/contact']" [routerLinkActive]="['active-link']">Contact me</a>
         </div>
       </mat-menu>
     </div>

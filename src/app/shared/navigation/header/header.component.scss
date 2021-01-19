@@ -27,9 +27,13 @@
     max-width: 100%;
     color: $color-primary-dark-blue;
 
-    a:hover, a.active {
+    a:hover{
       color: $color-primary-cyan;
     }
+  }
+
+  .active-link  {
+    color: $color-primary-cyan;
   }
 
   .show_menu {

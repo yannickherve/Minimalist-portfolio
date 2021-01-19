@@ -31,6 +31,33 @@
   .page-banner {
     margin: rem(96) auto;
   }
+  .banner_container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: rem(32);
+
+    a {
+      margin: 0;
+    }
+
+    h2 {
+      text-align: start;
+      max-width: rem(350);
+      padding-right: rem(6);
+    }
+
+    .banner-separator {
+      flex: 1;
+
+      max-width: 100%;
+      display: block;
+      min-width: rem(113);
+      height: 1px;
+      background-color: $color-primary-Grayish-dark-blue;
+      opacity: 0.25;
+    }
+  }
+
 }
 
 //1440px
