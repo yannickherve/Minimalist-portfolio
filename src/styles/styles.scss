@@ -2,6 +2,7 @@
 
 @import 'libs/variables';
 @import 'libs/functions';
+@import 'libs/responsive';
 @import 'libs/mixins';
 
 @import 'base/reset';
@@ -28,17 +29,24 @@ body {
   line-height: rem($base-line-height);
   font-weight: $font-weight-regular;
   color: $color-primary-dark-blue;
-  background-color: $color-secondary-very-light-gray;
+  //background-color: $color-secondary-very-light-gray;
 
-  //background: url('../assets/mobile_home_screen.png') top center / cover no-repeat $color-secondary-light-gray;
-  //linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6))
+  //background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+  //url('../assets/mobile.jpg') top center / cover no-repeat;
+
 }
 
 @media (min-width: 768px) {
-  //body {
-  //
-  //  background: url('../assets/tablet_home_screenshoot.png') top center / cover no-repeat $color-secondary-light-gray;
-  //}
+  body {
+    //background: url('../assets/tablet_home_screenshoot.png') top center / cover no-repeat $color-secondary-light-gray;
+  }
+}
+
+@media #{$XExtraLarge-up} {
+  body {
+    //background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    //url('../assets/desktop-home.jpg') top center / cover no-repeat;
+  }
 }
 
 

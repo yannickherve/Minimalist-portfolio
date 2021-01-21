@@ -38,17 +38,15 @@
     color: $color-primary-cyan;
   }
 
-  .show_menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
   .menu-icons {
     .hide_icon {
       display: none;
+    }
+  }
+
+  .hide_menu {
+    .menu_button {
+      padding-left: rem(10);
     }
   }
 }
@@ -92,6 +90,9 @@
       display: grid;
       grid-template-columns: repeat(3, auto);
       column-gap: rem(42);
+      font-size: rem(12);
+      letter-spacing: rem(2);
+      line-height: rem(14);
     }
 
     .hide_menu {
@@ -107,7 +108,7 @@
 //768px
 @media #{$medium-up} {
   .page-header {
-    padding: rem(64) rem(41) 0 rem(41);
+    padding: rem(64) rem(40) 0 rem(40);
   }
 }
 

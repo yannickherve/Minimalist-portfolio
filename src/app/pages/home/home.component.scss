@@ -3,6 +3,7 @@
 @import 'modules/buttons';
 @import 'libs/functions';
 @import 'libs/responsive';
+@import 'base/typography';
 
 .home-container {
   display: grid;
@@ -19,8 +20,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  grid-gap: rem(24);
-  grid-auto-flow: dense;
+  grid-gap: rem(15);
+
 
   position: relative;
   background-color: $color-secondary-very-light-gray;
@@ -41,11 +42,11 @@
 .home_about_me {
   grid-area: home_about_me;
 
-  margin-top: rem(106);
+  margin-top: rem(96);
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  grid-gap: rem(32);
+  grid-gap: rem(23);
 
   .home_about_me_body {
     padding-top: rem(32);
@@ -68,7 +69,7 @@
 @media #{$small-up} {
   .home_hero {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr auto;
+    grid-template-rows: auto auto;
     grid-gap: unset;
 
     .home_hero_img {
@@ -86,10 +87,10 @@
       flex-direction: column;
       justify-content: space-between;
 
-      padding: rem(35) rem(35) 0 0;
+      padding: rem(30) rem(30) 0 0;
 
       a {
-        margin-top: rem(48);
+        margin-top: rem(40);
       }
     }
   }
@@ -97,12 +98,19 @@
 
 //768px
 @media #{$medium-up} {
+  .home-container {
+    //margin-top: rem(2);
+  }
+
   .home_hero {
+    grid-template-rows: 1fr 278px;
+
     .home_hero_title {
       padding: rem(56) rem(56) 0 0;
 
       a {
         margin-top: rem(47);
+        height: 48px;
       }
     }
   }
@@ -121,6 +129,8 @@
     .home_about_me_body {
       padding-top: rem(51);
       padding-bottom: rem(46);
+
+
     }
   }
 }

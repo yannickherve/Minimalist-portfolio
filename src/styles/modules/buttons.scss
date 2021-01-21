@@ -1,11 +1,12 @@
 @import 'libs/functions';
 @import 'libs/variables';
+@import 'base/typography';
 
 .btn {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  outline: none;
+  border: 1px solid $color-primary-Grayish-dark-blue;
   text-transform: uppercase;
   font-size: rem(12);
   vertical-align: middle;
@@ -21,7 +22,6 @@
 
   width: rem(200);
   background-color: $color-primary-dark-blue;
-  // height: rem(48);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -55,7 +55,7 @@
 
 .btn--block_svg {
   background-color: $block-svg-color;
-  width: 100%;
+  max-width: 100%;
   width: rem(48);
 
   height: rem(48);
@@ -69,10 +69,9 @@
   @extend .btn;
 
   max-height: 100%;
-
   width: rem(162);
   height: rem(48);
-  font-weight: rem(12);
+  font-weight: $font-weight-regular;
   letter-spacing: rem(2);
 
   display: flex;
@@ -81,7 +80,7 @@
   align-items: center;
   background-color: transparent;
 
-  border: 1px solid $color-primary-Grayish-dark-blue;
+  //border: 1px solid $color-primary-Grayish-dark-blue;
 
   & > * {
     color: $color-primary-Grayish-dark-blue;

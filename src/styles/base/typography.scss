@@ -32,11 +32,16 @@ body {
 
 body {
   font-family: $base-font-family;
-  color: $text-color;
+  color: $color-primary-Grayish-dark-blue;
   font-weight: $font-weight-regular;
   line-height: rem($base-line-height);
+  letter-spacing: 0;
   background-color: $color-secondary-very-light-gray;
   margin: 0;
+}
+
+.body2 {
+  font-size: rem(15);
 }
 
 
@@ -74,6 +79,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+p {
+  opacity: .8;
 }
 
 

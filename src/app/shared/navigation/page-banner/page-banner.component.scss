@@ -6,16 +6,19 @@
 
 //banner bottom
 .page-banner {
-  margin: rem(105) auto rem(80) auto;
+  margin: rem(115) auto rem(80) auto;
 }
 
 .banner_container {
   display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   align-content: center;
+
   grid-gap: rem(40);
   text-align: center;
+  //padding-top: rem(10);
 
   a {
     margin: 0 auto;
@@ -43,7 +46,7 @@
     h2 {
       text-align: start;
       max-width: rem(350);
-      padding-right: rem(6);
+      //padding-right: rem(6);
     }
 
     .banner-separator {

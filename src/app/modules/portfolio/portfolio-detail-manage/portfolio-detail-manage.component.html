@@ -1,0 +1,119 @@
+<ng-container>
+  <div class="project-manage-container">
+    <section class="project_manage_hero_img">
+      <picture>
+        <source
+          media="(min-width:1200px)"
+          srcset="assets/images/detail/desktop/image-manage-hero@2x.jpg"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="assets/images/detail/tablet/image-manage-hero@2x.jpg"
+        />
+        <img
+          src="assets/images/detail/mobile/image-manage-hero@2x.jpg"
+          alt="Hero manage"
+        />
+      </picture>
+    </section>
+    <section class="project_manage_details">
+      <div class="project_manage_intro">
+        <h2>Manage</h2>
+        <p class="intro-description">
+          This project required me to build a fully responsive landing page to the designs
+          provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
+          required interactivity, such as the testimonial slider.
+        </p>
+        <div class="project_manage_skills">
+          <p class="skill-one">
+            Interaction Design / Front End Development
+          </p>
+          <p class="skill-two">
+            HTML / CSS / JS
+          </p>
+        </div>
+        <a id="view-website" routerLink="/" class="btn--secondary">
+          <span> Visit Website</span>
+        </a>
+      </div>
+
+      <div class="project_manage_body">
+        <div class="project_manage_background">
+          <h3>Project Background</h3>
+          <p class="text-description">
+            This project was a front-end challenge from Frontend Mentor. It’s a platform that
+            enables you to practice building websites to a design and project brief. Each challenge
+            includes mobile and desktop designs to show how the website should look at different
+            screen sizes. Creating these projects has helped me refine my workflow and solve
+            real-world coding problems. I’ve learned something new with each project, helping
+            me to improve and adapt my style.
+          </p>
+        </div>
+        <div class="project_manage_previews">
+          <h3 class="previews-title">Static Previews</h3>
+          <div class="previews_img">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="assets/images/detail/desktop/image-manage-preview-1@2x.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="assets/images/detail/tablet/image-manage-preview-1@2x.jpg"
+              />
+              <img
+                src="assets/images/detail/mobile/image-manage-preview-1@2x.jpg"
+                alt="Preview manage"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="assets/images/detail/desktop/image-manage-preview-2@2x.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="assets/images/detail/tablet/image-manage-preview-2@2x.jpg"
+              />
+              <img
+                src="assets/images/detail/mobile/image-manage-preview-2@2x.jpg"
+                alt="Preview manage"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="project_navigation">
+    <div class="project_navigation_container">
+      <a class="go-to-previous">
+        <div class="previous-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+            <path class="btn_svg" fill="none" stroke="#33323D" d="M9 0L1 8l8 8"/>
+          </svg>
+        </div>
+        <div class="previous-title">
+          <h3>Fylo</h3>
+          <span>Previous Project</span>
+        </div>
+      </a>
+
+      <a class="go-to-next">
+        <div class="next-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+            <path class="btn_svg" fill="none" stroke="#33323D" d="M1 0l8 8-8 8"/>
+          </svg>
+        </div>
+        <div class="next-title">
+          <h3>Bookmark</h3>
+          <span>Next Project</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <app-page-banner></app-page-banner>
+
+</ng-container>
