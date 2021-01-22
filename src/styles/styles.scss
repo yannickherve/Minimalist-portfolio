@@ -29,17 +29,17 @@ body {
   line-height: rem($base-line-height);
   font-weight: $font-weight-regular;
   color: $color-primary-dark-blue;
-  //background-color: $color-secondary-very-light-gray;
+  background-color: $color-secondary-very-light-gray;
 
   //background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-  //url('../assets/mobile-portfolio-detail-manage.jpg') top center / cover no-repeat;
+  //url('../assets/mobile-portfolio-detail-fylo.jpg') top center / cover no-repeat;
 
 }
 
 @media (min-width: 768px) {
   body {
     //background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-    //  url('../assets/tablet-portfolio-detail-manage.jpg') top center / cover no-repeat $color-secondary-light-gray;
+    //  url('../assets/tablet-portfolio-detail-bookmark.jpg') top center / cover no-repeat $color-secondary-light-gray;
   }
 }
 
@@ -47,7 +47,7 @@ body {
 @media #{$ExtraLarge-up} {
   body {
     //background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
-    //url('../assets/desktop-portfolio-detail-manage.jpg') top center / cover no-repeat;
+    //url('../assets/desktop-portfolio-detail-bookmark.jpg') top center / cover no-repeat;
   }
 }
 

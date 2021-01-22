@@ -1,1 +1,97 @@
-<p>portfolio-detail-bookmark works!</p>
+<ng-container>
+  <div class="project-bookmark-container">
+    <div class="project_bookmark_hero_img">
+      <picture>
+        <source
+          media="(min-width:1200px)"
+          srcset="assets/images/detail/desktop/image-bookmark-hero@2x.jpg"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="assets/images/detail/tablet/image-bookmark-hero@2x.jpg"
+        />
+        <img
+          src="assets/images/detail/mobile/image-bookmark-hero@2x.jpg"
+          alt="Bookmark manage"
+        />
+      </picture>
+    </div>
+    <section class="project_bookmark_details">
+      <div class="project_bookmark_intro">
+        <h2>Bookmark</h2>
+        <p class="intro-description">
+          This project required me to build a fully responsive landing page to the designs
+          provided. I used HTML5, along with CSS Grid and JavaScript for the areas that
+          required interactivity, such as the features section.
+        </p>
+        <div class="project_bookmark_skills">
+          <p class="skill-one">
+            Interaction Design / Front End Development
+          </p>
+          <p class="skill-two">
+            HTML / CSS / JS
+          </p>
+        </div>
+        <a id="view-website" routerLink="/" class="btn--secondary">
+          <span> Visit Website</span>
+        </a>
+      </div>
+
+      <div class="project_bookmark_body">
+        <div class="project_bookmark_background">
+          <h3>Project Background</h3>
+          <p class="text-description">
+            This project was a front-end challenge from Frontend Mentor. It’s a platform that
+            enables you to practice building websites to a design and project brief. Each challenge
+            includes mobile and desktop designs to show how the website should look at different
+            screen sizes. Creating these projects has helped me refine my workflow and solve
+            real-world coding problems. I’ve learned something new with each project, helping
+            me to improve and adapt my style.
+          </p>
+        </div>
+        <div class="project_bookmark_previews">
+          <h3 class="previews-title">Static Previews</h3>
+          <div class="previews_img">
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="assets/images/detail/desktop/image-bookmark-preview-1@2x.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="assets/images/detail/tablet/image-bookmark-preview-1@2x.jpg"
+              />
+              <img
+                src="assets/images/detail/mobile/image-bookmark-preview-1@2x.jpg"
+                alt="Preview manage"
+              />
+            </picture>
+            <picture>
+              <source
+                media="(min-width:1200px)"
+                srcset="assets/images/detail/desktop/image-bookmark-preview-2@2x.jpg"
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="assets/images/detail/tablet/image-bookmark-preview-2@2x.jpg"
+              />
+              <img
+                src="assets/images/detail/mobile/image-bookmark-preview-2@2x.jpg"
+                alt="Preview manage"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <app-projects-nav
+    [previousProject]="'manage'"
+    [nextProject]="'insure'"
+  >
+  </app-projects-nav>
+
+  <app-page-banner></app-page-banner>
+
+</ng-container>

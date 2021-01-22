@@ -19,7 +19,6 @@ export class ProjectsNavComponent implements OnInit {
   }
 
   navigateUrl(name): void {
-    console.log(name);
     this.router.navigate(['/portfolio/project-' + name]).then(() => {});
   }
 

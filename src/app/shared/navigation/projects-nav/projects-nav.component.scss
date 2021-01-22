@@ -34,6 +34,10 @@
     opacity: 0.5;
   }
 
+  .previous-title, .next-title h3 {
+    text-transform: capitalize;
+  }
+
   .previous-title, .next-title {
     margin-top: rem(7);
   }
