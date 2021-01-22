@@ -1,0 +1,29 @@
+<section class="project_navigation">
+  <div class="project_navigation_container">
+    <a class="go-to-previous" (click)="navigateUrl(previousProject)">
+      <div class="previous-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+          <path class="btn_svg" fill="none" stroke="#33323D" d="M9 0L1 8l8 8"/>
+        </svg>
+      </div>
+      <div class="previous-title">
+        <h3>Fylo</h3>
+        <span>Previous Project</span>
+      </div>
+    </a>
+
+    <div class="navigation-separator"></div>
+
+    <a class="go-to-next" (click)="navigateUrl(nextProject)">
+      <div class="next-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16">
+          <path class="btn_svg" fill="none" stroke="#33323D" d="M1 0l8 8-8 8"/>
+        </svg>
+      </div>
+      <div class="next-title">
+        <h3>Bookmark</h3>
+        <span>Next Project</span>
+      </div>
+    </a>
+  </div>
+</section>

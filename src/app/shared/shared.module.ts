@@ -8,9 +8,10 @@ import { SidenavLeftComponent } from './navigation/sidenav-left/sidenav-left.com
 import {HeaderComponent} from './navigation/header/header.component';
 import {FooterComponent} from './navigation/footer/footer.component';
 import { PageBannerComponent } from './navigation/page-banner/page-banner.component';
+import { ProjectsNavComponent } from './navigation/projects-nav/projects-nav.component';
 
 @NgModule({
-  declarations: [SidenavLeftComponent, HeaderComponent, FooterComponent, PageBannerComponent],
+  declarations: [SidenavLeftComponent, HeaderComponent, FooterComponent, PageBannerComponent, ProjectsNavComponent],
   imports: [
     RouterModule,
     MaterialModule,
@@ -24,7 +25,8 @@ import { PageBannerComponent } from './navigation/page-banner/page-banner.compon
     SidenavLeftComponent,
     HeaderComponent,
     FooterComponent,
-    PageBannerComponent
+    PageBannerComponent,
+    ProjectsNavComponent
   ]
 })
 export class SharedModule { }
