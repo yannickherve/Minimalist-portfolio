@@ -6,7 +6,7 @@
 
 //banner bottom
 .page-banner {
-  margin: rem(115) auto rem(80) auto;
+  margin: rem(64) auto rem(80) auto;
 }
 
 .banner_container {
@@ -18,10 +18,10 @@
 
   grid-gap: rem(40);
   text-align: center;
-  //padding-top: rem(10);
 
   a {
     margin: 0 auto;
+    min-width: rem(162);
   }
 
   .banner-separator {
@@ -32,7 +32,9 @@
 //768px
 @media #{$medium-up} {
   .page-banner {
-    margin: rem(96) auto;
+    //margin-top: rem(80);
+    margin-top: rem(96);
+    margin-bottom: rem(96);
   }
   .banner_container {
     display: grid;

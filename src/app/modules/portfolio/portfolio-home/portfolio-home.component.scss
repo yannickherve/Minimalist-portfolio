@@ -6,16 +6,36 @@
 
 .portfolio-container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 688px);
   grid-gap: rem(72);
+  margin-bottom: rem(80);
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover; /* new */
+  }
+
+  & > * {
+    a {
+      width: rem(175);
+    }
+
+    p {
+      text-align: left;
+      margin: rem(24) 0;
+    }
+  }
+}
+
+#bookmark-button, #manage-button span {
+  padding: rem(17) rem(32);
 }
 
 .portfolio-manage {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
   grid-gap: rem(32);
-  grid-auto-flow: dense;
 
   .manage-body {
     padding-top: rem(24);
@@ -23,19 +43,14 @@
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
 
-    p {
-      @extend .body2;
-      padding: rem(24 ) 0 rem(24) 0;
-    }
   }
 }
 
 .portfolio-bookmark {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
   grid-gap: rem(32);
-  grid-auto-flow: dense;
+  align-items: flex-end;
 
   .bookmark-body {
     padding-top: rem(24);
@@ -43,20 +58,13 @@
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
 
-    p {
-      font-size: rem(15);
-      text-align: left;
-      padding: rem(24 ) 0 rem(24) 0;
-    }
   }
 }
 
 .portfolio-insure {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
   grid-gap: rem(32);
-  grid-auto-flow: dense;
 
   .insure-body {
     padding-top: rem(24);
@@ -64,10 +72,6 @@
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
 
-    p {
-      font-size: rem(15);
-      padding: rem(24 ) 0 rem(24) 0;
-    }
   }
 }
 
@@ -83,15 +87,8 @@
     padding-bottom: rem(24);
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
-
-    p {
-      font-size: rem(15);
-      text-align: left;
-      padding: rem(24 ) rem(18) rem(24) 0;
-    }
   }
 }
-
 
 // very small 350px
 @media #{$extraSmall-up} {
@@ -101,12 +98,21 @@
 //768px
 @media #{$medium-up} {
   .portfolio-container {
+    grid-template-rows: repeat(4, 418px);
     margin-top: rem(54);
+    row-gap: rem(80);
+
+    & > * {
+      p {
+        font-size: rem(15);
+        margin-top: rem(29);
+        margin-bottom: rem(35);
+      }
+    }
   }
 
   .portfolio-manage {
-    grid-template-columns: 339px 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: 339px auto;
     grid-gap: rem(69);
     align-items: center;
 
@@ -118,11 +124,8 @@
 
   .portfolio-bookmark {
     grid-template-columns: 1fr 339px;
-    grid-template-rows: auto;
     grid-gap: rem(69);
     align-items: center;
-    grid-template-areas:
-      "bookmark-body bookmark-img";
 
     .bookmark-body {
       padding-top: rem(32);
@@ -130,45 +133,42 @@
     }
 
     .bookmark-img {
-      grid-area: bookmark-img;
-    }
-
-    .bookmark-body {
-      grid-area: bookmark-body;
+      order: 2;
     }
   }
 
   .portfolio-insure {
     grid-template-columns: 339px 1fr;
-    grid-template-rows: auto;
     align-items: center;
     grid-gap: rem(69);
 
     .insure-body {
       padding-top: rem(32);
       padding-bottom: rem(50);
+
+      p {
+        margin-bottom: rem(27);
+      }
     }
   }
 
   .portfolio-fylo {
     grid-template-columns: 1fr 339px;
-    grid-template-rows: auto;
+    column-gap: rem(69);
     align-items: center;
-    grid-gap: rem(69);
-    grid-template-areas:
-      "fylo-body fylo-img";
 
     .fylo-body {
       padding-top: rem(32);
-      padding-bottom: rem(50);
+      padding-bottom: rem(51);
+
+      p {
+        margin-top: rem(29);
+        margin-bottom: rem(34);
+      }
     }
 
     .fylo-img {
-      grid-area: fylo-img;
-    }
-
-    .fylo-body {
-      grid-area: fylo-body;
+      order: 2;
     }
   }
 }
@@ -176,118 +176,131 @@
 //992px
 @media #{$large-up}  {
   .portfolio-manage {
-    grid-template-columns: 420px 1fr;
-    grid-gap: rem(80);
-    margin-right: rem(94);
+    //grid-template-columns: 420px 1fr;
+    //grid-gap: rem(80);
 
     .manage-body {
-      p {
-        max-width: rem(350);
-        font-size: rem(16);
-        text-align: left;
-      }
+      //p {
+      //  max-width: rem(350);
+      //  font-size: rem(16);
+      //  text-align: left;
+      //}
     }
   }
 
   .portfolio-bookmark {
-    margin-left: rem(94);
 
     .bookmark-body {
-      p {
-        max-width: rem(350);
-        font-size: rem(16);
-        text-align: left;
-      }
+      //p {
+      //  max-width: rem(350);
+      //  font-size: rem(16);
+      //  text-align: left;
+      //}
     }
   }
 
   .portfolio-insure {
-    margin-right: rem(94);
 
     .insure-body {
-      p {
-        max-width: rem(350);
-        font-size: rem(16);
-        text-align: left;
-      }
+      //p {
+      //  max-width: rem(350);
+      //  font-size: rem(16);
+      //  text-align: left;
+      //}
     }
   }
 
   .portfolio-fylo {
-    margin-left: rem(94);
 
     .fylo-body {
-      p {
-        max-width: rem(350);
-        font-size: rem(16);
-        text-align: left;
-      }
+      //p {
+      //  max-width: rem(350);
+      //  font-size: rem(16);
+      //  text-align: left;
+      //}
     }
   }
 }
 
 //1200px
 @media #{$ExtraLarge-up} {
-  .portfolio-manage {
-    grid-template-columns: 500px 1fr;
-    grid-gap: rem(125);
-    justify-content: center;
+  .portfolio-container {
+    grid-template-rows: repeat(4, 500px);
+    padding-bottom: 0;
 
-    .manage-img {
-      height: 100%;
-    }
-
-    .manage-body {
-      max-height: 100%;
-      padding-top: rem(100);
-      padding-bottom: rem(100);
-
+    & > * {
       p {
+        margin-top: rem(28);
+        margin-bottom: rem(24);
         font-size: rem(16);
+        text-align: left;
       }
     }
   }
 
-  .portfolio-bookmark {
-    grid-template-columns: 1fr 500px;
+  .portfolio-manage {
+    grid-template-columns: 540px 350px;
     grid-gap: rem(125);
-    justify-content: center;
+    justify-content: start;
 
-    .bookmark-body {
-      max-height: 100%;
-      padding-top: rem(100);
-      padding-bottom: rem(100);
-    }
-  }
-
-  .portfolio-insure {
-    grid-template-columns: 500px 1fr;
-    grid-gap: rem(125);
-    justify-content: center;
-
-    .insure-body {
-      max-height: 100%;
-      padding-top: rem(100);
-      padding-bottom: rem(100);
-    }
-  }
-
-  .portfolio-fylo {
-    grid-template-columns: 1fr 500px;
-    grid-gap: rem(125);
-    //margin-left: rem(97);
-    justify-content: center;
-
-    .fylo-body {
+    .manage-body {
       max-height: 100%;
       padding-top: rem(103);
       padding-bottom: rem(103);
     }
   }
+
+  .portfolio-bookmark {
+    grid-template-columns: 350px 540px;
+    grid-gap: rem(125);
+    justify-content: end;
+
+    .bookmark-body {
+      max-height: 100%;
+      padding-top: rem(103);
+      padding-bottom: rem(103);
+    }
+  }
+
+  .portfolio-insure {
+    grid-template-columns: 540px 350px;
+    grid-gap: rem(125);
+    justify-content: start;
+
+    .insure-body {
+      max-height: 100%;
+      padding-top: rem(103);
+      padding-bottom: rem(103);
+
+      p {
+        margin-bottom: rem(24);
+      }
+    }
+  }
+
+  .portfolio-fylo {
+    grid-template-columns: 350px 540px;
+    grid-gap: rem(125);
+    justify-content: end;
+
+    .fylo-body {
+      max-height: 100%;
+      padding-top: rem(103);
+      padding-bottom: rem(103);
+
+      p {
+        margin-top: rem(28);
+        margin-bottom: rem(24);
+      }
+    }
+  }
 }
+
 //1440px
 @media #{$XExtraLarge-up} {
-  //
+  //.portfolio-container {
+  //  grid-template-rows: repeat(4, 500px);
+  //}
 }
 
 

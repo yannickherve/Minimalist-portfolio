@@ -27,6 +27,7 @@
   align-items: center;
   align-content: space-around;
   color: #FFFFFF;
+  border: none;
 
   span {
     padding-left: 10%;
@@ -69,7 +70,9 @@
   @extend .btn;
 
   max-height: 100%;
-  width: rem(162);
+  min-width: rem(100);
+  max-width: rem(178);
+  //width: 100%;
   height: rem(48);
   font-weight: $font-weight-regular;
   letter-spacing: rem(2);

@@ -1,53 +1,56 @@
-<div class="home-container">
+<ng-container>
+  <div class="home-container">
 
-  <section class="home_hero">
-<!--    <div class="home_hero_img">-->
-      <picture class="home_hero_img">
-        <source
-          media="(min-width:1200px)"
-          srcset="assets/images/homepage/desktop/image-homepage-hero@2x.jpg"
-        />
-        <source
-          media="(min-width: 600px)"
-          srcset="assets/images/homepage/tablet/image-homepage-hero@2x.jpg"
-        />
-        <img
-          src="assets/images/homepage/mobile/image-homepage-hero@2x.jpg"
-          alt="Hero image"
-        />
-      </picture>
-<!--    </div>-->
-    <div class="home_hero_title">
-      <h2>
-        Hey, I’m Alex Spencer and I love building beautiful websites
-      </h2>
-      <a [routerLink] = "['/']"  fragment="aboutMe" class="btn--primary">
-        <div class="btn--block_svg">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="14"
-          >
-            <g
-              class="btn_svg"
-              fill="none"
-              fill-rule="evenodd"
-              stroke="#5FB4A2"
+    <section class="home_hero">
+      <div class="home_hero_img">
+        <picture>
+          <source
+            media="(min-width:1200px)"
+            srcset="assets/images/homepage/desktop/image-homepage-hero@2x.jpg"
+          />
+          <source
+            media="(min-width: 600px)"
+            srcset="assets/images/homepage/tablet/image-homepage-hero@2x.jpg"
+          />
+          <img
+            src="assets/images/homepage/mobile/image-homepage-hero@2x.jpg"
+            alt="Hero image"
+          />
+        </picture>
+      </div>
+      <div class="home_hero_title">
+        <h2>
+          Hey, I’m Alex Spencer and I love building beautiful websites
+        </h2>
+        <a [routerLink]="['/']" fragment="aboutMe" class="btn--primary">
+          <div class="btn--block_svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="14"
             >
-              <path d="M0 9l8 4 8-4" />
-              <path opacity=".5" d="M0 5l8 4 8-4" />
-              <path opacity=".25" d="M0 1l8 4 8-4" />
-            </g>
-          </svg>
-        </div>
-        <span>About me</span>
-      </a>
-    </div>
-  </section>
+              <g
+                class="btn_svg"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#5FB4A2"
+              >
+                <path d="M0 9l8 4 8-4"/>
+                <path opacity=".5" d="M0 5l8 4 8-4"/>
+                <path opacity=".25" d="M0 1l8 4 8-4"/>
+              </g>
+            </svg>
+          </div>
+          <span>About me</span>
+        </a>
+      </div>
 
-  <section class="home_about_me" id="aboutMe" data-aos="fade-up">
-<!--    <div class="home_about_me_img">-->
-      <picture class="home_about_me_img">
+    </section>
+
+
+    <section class="home_about_me" id="aboutMe" data-aos="fade-up">
+          <div class="home_about_me_img">
+      <picture>
         <source
           media="(min-width:1200px)"
           srcset="assets/images/homepage/desktop/image-homepage-profile@2x.jpg"
@@ -61,26 +64,28 @@
           alt="My profile image"
         />
       </picture>
-<!--    </div>-->
+          </div>
 
-    <div class="home_about_me_body">
-      <h2>About Me</h2>
-      <p>
-        I’m a junior front-end developer looking for a new role in an
-        exciting company. I focus on writing accessible HTML, using
-        modern CSS practices and writing clean JavaScript. When writing
-        JavaScript code, I mostly use React, but I can adapt to whatever
-        tools are required. I’m based in London, UK, but I’m happy
-        working remotely and have experience in remote teams. When I’m
-        not coding, you’ll find me outdoors. I love being out in nature
-        whether that’s going for a walk, run or cycling. I’d love you to
-        check out my work.
-      </p>
-      <a id="about-button" routerLink="/portfolio" class="btn--secondary">
-        <span>Go to Portfolio</span>
-      </a>
-    </div>
-  </section>
+      <div class="home_about_me_body">
+        <h2>About Me</h2>
+        <p>
+          I’m a junior front-end developer looking for a new role in an
+          exciting company. I focus on writing accessible HTML, using
+          modern CSS practices and writing clean JavaScript. When writing
+          JavaScript code, I mostly use React, but I can adapt to whatever
+          tools are required. I’m based in London, UK, but I’m happy
+          working remotely and have experience in remote teams. When I’m
+          not coding, you’ll find me outdoors. I love being out in nature
+          whether that’s going for a walk, run or cycling. I’d love you to
+          check out my work.
+        </p>
+        <a id="about-button" routerLink="/portfolio" class="btn--secondary">
+          <span>Go to Portfolio</span>
+        </a>
+      </div>
+    </section>
 
+  </div>
   <app-page-banner></app-page-banner>
-</div>
+
+</ng-container>

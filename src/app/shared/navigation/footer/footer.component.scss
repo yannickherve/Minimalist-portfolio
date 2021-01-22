@@ -79,6 +79,7 @@
     .footer-block-left {
       grid-template-columns: repeat(2, auto);
       grid-gap: rem(48);
+      align-items: center;
 
       .footer-nav {
         grid-template-columns: repeat(3, auto) 30%;

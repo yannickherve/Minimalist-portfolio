@@ -7,21 +7,22 @@
 
 .home-container {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    "home_hero"
-    "home_about_me";
+  grid-template-rows: auto 995px;
+  grid-gap: rem(96);
+  margin-bottom: rem(115);
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover; /* new */
+  }
 }
 
 .home_hero {
-  grid-area: home_hero;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  grid-gap: rem(15);
-
+  grid-gap: rem(24);
 
   position: relative;
   background-color: $color-secondary-very-light-gray;
@@ -31,8 +32,6 @@
   }
 
   .home_hero_title {
-    height: 100%;
-
     a {
       margin-top: rem(32);
     }
@@ -40,13 +39,9 @@
 }
 
 .home_about_me {
-  grid-area: home_about_me;
-
-  margin-top: rem(96);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  grid-gap: rem(23);
+  grid-gap: rem(32);
 
   .home_about_me_body {
     padding-top: rem(32);
@@ -55,7 +50,9 @@
     border-top: 1px solid lightgray;
 
     p {
-      padding: rem(28) 0 rem(24) 0;
+      //padding: rem(28) 0 rem(24) 0;
+      margin-top: rem(28);
+      margin-bottom: rem(24);
     }
 
     #about-button {
@@ -69,28 +66,37 @@
 @media #{$small-up} {
   .home_hero {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-gap: unset;
+    position: relative;
 
     .home_hero_img {
       grid-column: 1 / -1;
       grid-row: 1 / -1;
       z-index: 4;
+
+      img {
+        max-height: 600px;
+      }
     }
 
     .home_hero_title {
       grid-column: 1 / 3;
-      grid-row: 2 / 3;
+      grid-row: 3 / 4;
       z-index: 6;
 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: rem(56) rem(56) 0 0;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
 
-      padding: rem(30) rem(30) 0 0;
-
-      a {
-        margin-top: rem(40);
+  .home_about_me {
+    .home_about_me_img {
+      img {
+        max-height: 600px;
       }
     }
   }
@@ -99,27 +105,40 @@
 //768px
 @media #{$medium-up} {
   .home-container {
-    //margin-top: rem(2);
+    grid-template-rows: repeat(2, 600px);
+    margin-top: rem(7);
+    margin-bottom: rem(83);
+  }
+  .home_hero_img {
+    //background: white url('~src/assets/images/homepage/tablet/image-homepage-hero@2x.jpg');
   }
 
   .home_hero {
-    grid-template-rows: 1fr 278px;
+    grid-gap: unset;
 
     .home_hero_title {
-      padding: rem(56) rem(56) 0 0;
+      padding-top: rem(56);
+      width: rem(514);
 
       a {
-        margin-top: rem(47);
+        margin-top: rem(48);
         height: 48px;
+      }
+    }
+
+    .home_hero_img {
+      img {
+        height: 100%;
+        max-height: 600px !important;
       }
     }
   }
 
   .home_about_me {
-    grid-template-columns: 281px 1fr;
+    //grid-template-columns: 281px 339px;
+    grid-template-columns: 281px auto;
     grid-template-rows: auto;
     grid-gap: rem(69);
-    margin-top: rem(96);
 
     .home_about_me_img {
       max-height: rem(600);
@@ -130,78 +149,62 @@
       padding-top: rem(51);
       padding-bottom: rem(46);
 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
+      p {
+        max-width: rem(560);
+      }
     }
   }
 }
 
 //992px
 @media #{$large-up} {
-  .home_hero {
-    .home_hero_title {
-      max-width: rem(445);
-
-      a {
-        margin-top: rem(45);
-      }
-    }
-  }
-
   .home_about_me {
-    grid-gap: rem(90);
-    padding-right: rem(70);
+    grid-gap: rem(125);
   }
 }
 
 //1200px
 @media #{$ExtraLarge-up} {
-  .home_about_me {
-    grid-template-columns: 540px 1fr;
-    grid-template-rows: auto;
-    grid-gap: rem(100);
+  .home-container {
+    margin-top: rem(14);
+    grid-gap: rem(150);
+  }
 
-    padding-right: rem(70);
+  .home_hero {
 
-    .home_about_me_img {
-      max-height: rem(600);
-      width: 100%;
+    .home_hero_title {
+      max-width: rem(445);
+      max-height: rem(357);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h2 {
+        font-size: rem(50);
+        line-height: rem(50);
+        letter-spacing: -0.45 px;
+      }
+
+      //a {
+      //  margin-top: rem(53);
+      //}
     }
+  }
+
+  .home_about_me {
+    grid-template-columns: 540px 350px;
+    grid-template-rows: auto;
+    grid-gap: rem(125);
+    justify-content: start;
   }
 }
 
 //1440px
 @media #{$XExtraLarge-up} {
-  .home_hero {
-    .home_hero_title {
-      padding: rem(56) rem(55) 0 0;
-
-      h2 {
-        line-height: rem(50);
-        letter-spacing: -0.45px;
-        font-size: rem(50);
-        text-align: left;
-      }
-
-      a {
-        margin-top: rem(53);
-      }
-    }
-  }
-
-  .home_about_me {
-    grid-gap: rem(125);
-    margin-top: rem(150);
-
-    padding-right: rem(95);
-
-    .home_about_me_img {
-      max-height: rem(600);
-      width: 100%;
-    }
-
-    .home_about_me_body {
-      text-align: left;
-    }
-  }
+//
 }
 
