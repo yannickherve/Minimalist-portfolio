@@ -32,8 +32,7 @@
 //768px
 @media #{$medium-up} {
   .page-banner {
-    //margin-top: rem(80);
-    margin-top: rem(96);
+    margin-top: rem(80);
     margin-bottom: rem(96);
   }
   .banner_container {
@@ -48,7 +47,6 @@
     h2 {
       text-align: start;
       max-width: rem(350);
-      //padding-right: rem(6);
     }
 
     .banner-separator {
@@ -65,9 +63,9 @@
 
 }
 
-//1440px
-@media #{$XExtraLarge-up} {
+//1200px
+@media #{$ExtraLarge-up} {
   .page-banner {
-    margin: rem(150) auto;
+    margin: rem(115) auto;
   }
 }

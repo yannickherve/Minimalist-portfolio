@@ -6,13 +6,22 @@
 @import 'base/typography';
 
 .project-manage-container {
-  margin-top: rem(54);
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: rem(40);
   grid-template-areas:
     "hero_img"
     "manage_details";
+
+  img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  h3 {
+    line-height: rem(42);
+  }
 }
 
 .project_manage_hero_img {
@@ -28,11 +37,14 @@
   .project_manage_intro {
     border-bottom: 1px solid lightgray;
     border-top: 1px solid lightgray;
-    padding: rem(25) 0;
+    padding: rem(24) 0;
 
     .intro-description {
       @extend .body2;
-      padding: rem(24) 0;
+      margin: rem(24) 0;
+
+      //hack text align
+      padding-right: rem(5);
       text-align: left;
     }
 
@@ -53,10 +65,11 @@
 
   .project_manage_body {
     .project_manage_background {
+
       .text-description {
         @extend .body2;
-        padding-top: rem(28);
-        padding-bottom: rem(40);
+        margin-top: rem(28);
+        margin-bottom: rem(40);
       }
     }
     .project_manage_previews {
@@ -74,18 +87,29 @@
 }
 
 .project_navigation {
-  margin-top: rem(64);
+  margin-top: rem(65);
 }
 
 .project_navigation_container {
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
+  display: flex;
   justify-content: space-between;
+
+
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 
+  h3 {
+    line-height: rem(32);
+  }
+
   a {
     padding: rem(24) 0;
+  }
+  .navigation-separator {
+    min-width: rem(1);
+    min-height: 100%;
+    background-color: $color-primary-Grayish-dark-blue;
+    opacity: 0.25;
   }
 
   .previous-title span, .next-title span {
@@ -93,20 +117,29 @@
     opacity: 0.5;
   }
 
+  .previous-title, .next-title {
+    margin-top: rem(7);
+  }
+
+  .go-to-previous {
+    text-align: left;
+  }
   .go-to-next {
     text-align: right;
-    border-left: 1px solid lightgray;
   }
 
-  .previous-title h3, .next-title h3 {
-    margin-top: rem(16);
+  .go-to-next {
+    text-align: right;
   }
-
 
 }
 
 //768px
 @media #{$medium-up} {
+  .project-manage-container {
+    margin-top: rem(54);
+  }
+
   .project_manage_details {
     grid-gap: rem(40);
 
@@ -117,6 +150,7 @@
       column-gap: rem(12);
 
       .intro-description {
+        margin: 0;
         padding: 0;
         grid-column: 2 / 3;
         grid-row: 1 / 4;
@@ -132,8 +166,17 @@
         margin: 0;
       }
     }
+
+    .project_manage_body {
+      .project_manage_previews {
+        .previews_img {
+          //grid-gap: rem(31)
+        }
+      }
+    }
   }
 
+  //navigation
   .project_navigation {
     margin-top: rem(80);
   }
@@ -200,6 +243,19 @@
       .project_manage_skills {
         margin-top: 0;
         margin-bottom: rem(32);
+        font-size: rem(16);
+
+        .skill-one {
+          margin-bottom: rem(16);
+        }
+      }
+    }
+
+    .project_manage_body {
+      .project_manage_previews {
+        .previews-title {
+          margin-bottom: rem(28);
+        }
       }
     }
   }
@@ -207,4 +263,5 @@
   .project_navigation {
     margin-top: rem(64);
   }
+
 }
