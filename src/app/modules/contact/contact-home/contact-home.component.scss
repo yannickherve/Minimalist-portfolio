@@ -1,0 +1,238 @@
+@import 'libs/variables';
+@import 'modules/icons';
+@import 'modules/buttons';
+@import 'libs/functions';
+@import 'libs/responsive';
+@import 'base/typography';
+
+.contact-container {
+  display: grid;
+  grid-gap: rem(32);
+}
+
+.block-get-in-touch {
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+
+  padding-top: rem(24);
+  padding-bottom: rem(32);
+
+  display: grid;
+  grid-gap: rem(24);
+
+  .touch-text {
+    @extend .body2;
+  }
+
+  .touch-socials {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: rem(104);
+    height: rem(24);
+
+    & a {
+      transition: background-color .6s, color .6s;
+    }
+    & a:hover {
+      color: $color-primary-cyan;
+
+      .touch-socials-icons {
+        fill: $color-primary-cyan;
+      }
+    }
+  }
+}
+
+.blur {
+  input, textarea {
+    border-color: #F43030!important;
+  }
+}
+.nameBlur {
+  input {
+    border-color: #F43030!important;
+  }
+}
+.emailBlur {
+  input {
+    border-color: #F43030!important;
+  }
+}
+.msgBlur {
+  textarea {
+    border-color: #F43030!important;
+  }
+}
+
+.block-contact-me {
+  display: grid;
+  row-gap: rem(24);
+  margin-bottom: rem(80);
+}
+
+.contact-form {
+  display: grid;
+  row-gap: rem(24);
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: rem(13);
+      line-height: rem(30);
+      font-weight: bold;
+      color: rgba(51, 50, 61, 0.8);
+    }
+  }
+
+  ::placeholder {
+    color: rgba(51, 50, 61, 0.4);
+    font-size: rem(13);
+    line-height: rem(30);
+  }
+
+  input[type=text], input[type=email], textarea {
+    background-color: rgba(51, 50, 61, 0.1);
+    outline: none;
+    border: 1px solid transparent;
+    transition: background-color .3s, border-color .3s;
+    font-size: rem(13);
+    line-height: rem(30);
+    color: rgba(51, 50, 61);
+    font-family: $base-font-family;
+  }
+
+  input[type=text]:focus, textarea:focus {
+    border-color: $color-primary-cyan;
+  }
+
+  .error {
+    width: 40%;
+    padding: 0;
+    font-size: rem(10);
+    line-height: rem(12);
+    color: #F43030;
+    font-weight: bold;
+    margin-top: rem(4);
+  }
+
+  .name-group, .email-group {
+    input {
+      margin-top: rem(8);
+      padding: rem(9) rem(16);
+      height: rem(48);
+    }
+  }
+
+  .message-group {
+    textarea {
+      resize: none;
+      height: rem(96);
+      padding: rem(9) rem(16);
+    }
+  }
+
+  .submit-form {
+    flex: none;
+    text-transform: uppercase;
+    font-size: rem(12);
+    line-height: rem(14);
+    letter-spacing: 2px;
+    width: rem(200);
+    height: rem(48);
+    display: block;
+    padding: rem(16) rem(24);
+    cursor: pointer;
+    outline: none;
+    background-color: #203A4C;
+    color: #FFFFFF;
+  }
+}
+
+//768px
+@media #{$medium-up} {
+  .contact-container {
+    margin-top: rem(54);
+  }
+
+  .block-get-in-touch {
+    padding-top: rem(32);
+  }
+
+  .block-contact-me {
+    row-gap: rem(32);
+    margin-bottom: rem(96);
+  }
+
+  .message-group {
+    height: rem(136);
+  }
+}
+
+//992px
+@media #{$large-up}  {
+  .contact-container {
+    grid-gap: rem(47);
+  }
+
+  .block-get-in-touch {
+    column-gap: rem(125);
+    grid-template-areas:
+      "title touch_text"
+      "title socials";
+
+    padding-top: rem(48);
+    padding-bottom: rem(48);
+
+    .touch-title {
+      grid-area: title;
+      width: rem(350);
+    }
+
+    .touch-text {
+      grid-area: touch_text;
+      max-width: rem(635);
+      width: 100%;
+      text-align: left;
+      font-size: rem(16);
+    }
+
+    .touch-socials {
+      grid-area: socials;
+    }
+  }
+
+  .block-contact-me {
+    //column-gap: rem(125);
+    grid-template-areas:
+      "touch-title form"
+      "touch-title form";
+
+    .touch-title {
+      grid-area: touch-title;
+      max-width: rem(350);
+    }
+
+    .contact-form {
+      grid-area: form;
+      width: 100%;
+    }
+  }
+
+}
+
+//1200px
+@media #{$ExtraLarge-up} {
+  .block-get-in-touch {
+    grid-template-columns: 350px 1fr;
+  }
+
+  .block-contact-me {
+    grid-template-columns: 350px 1fr;
+    column-gap: rem(125);
+    margin-bottom: rem(109);
+  }
+}
+

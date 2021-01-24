@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
 
-
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 
@@ -22,6 +21,11 @@
   a {
     padding: rem(24) 0;
   }
+
+  & a:hover {
+    color: $color-primary-cyan;
+  }
+
   .navigation-separator {
     min-width: rem(1);
     min-height: 100%;

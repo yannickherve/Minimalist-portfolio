@@ -3,7 +3,9 @@ import { RouterModule } from '@angular/router';
 
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {MaterialModule} from './material/material.module';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {CommonModule} from '@angular/common';
+
 import { SidenavLeftComponent } from './navigation/sidenav-left/sidenav-left.component';
 import {HeaderComponent} from './navigation/header/header.component';
 import {FooterComponent} from './navigation/footer/footer.component';
@@ -16,12 +18,16 @@ import { ProjectsNavComponent } from './navigation/projects-nav/projects-nav.com
     RouterModule,
     MaterialModule,
     CommonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     MaterialModule,
     CommonModule,
     FlexLayoutModule,
+    ReactiveFormsModule,
+    FormsModule,
     SidenavLeftComponent,
     HeaderComponent,
     FooterComponent,
