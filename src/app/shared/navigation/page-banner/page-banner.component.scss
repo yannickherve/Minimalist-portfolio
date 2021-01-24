@@ -66,6 +66,7 @@
 //1200px
 @media #{$ExtraLarge-up} {
   .page-banner {
-    margin: rem(115) auto;
+    margin-top: rem(115);
+    margin-bottom: rem(150);
   }
 }
