@@ -58,16 +58,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: rem(40) rem(63);
+  padding: rem(40) rem(40);
   max-height: 100%;
 }
 
 .menu-container {
-  display: flex;
+  display: grid;
+  grid-gap: rem(32);
   align-items: center;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
+  text-align: center;
+  line-height: rem(14);
+
+
   color: #FFFFFF;
   font-size: rem(12);
   letter-spacing: rem(2);
