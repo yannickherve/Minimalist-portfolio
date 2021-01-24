@@ -3,8 +3,8 @@
     <app-header></app-header>
 
     <main class="page-body">
-      <div class="full-container">
-        <router-outlet></router-outlet>
+      <div class="full-container" [@routeAnimations]="prepareRoute(outlet)">
+        <router-outlet #outlet="outlet"></router-outlet>
       </div>
     </main>
 

@@ -11,7 +11,6 @@ export class PageBannerComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.dynamicMargin);
   }
 
 }

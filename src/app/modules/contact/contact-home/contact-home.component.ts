@@ -39,6 +39,7 @@ export class ContactHomeComponent implements OnInit {
     alert('SUCCESS!! :-)\n\n' + JSON.stringify(this.contactForm.value, null, 4));
   }
 
+  // hack error handling
   focusOnIfError(): void{
     if (this.contactForm.controls.name.invalid) {
       this.nameError.nativeElement.classList.add('nameBlur');
@@ -53,7 +54,7 @@ export class ContactHomeComponent implements OnInit {
     setTimeout(() => {
       this.nameError.nativeElement.classList.remove('nameBlur');
       this.emailError.nativeElement.classList.remove('emailBlur');
-      this.emailError.nativeElement.classList.remove('msgBlur');
+      this.msgError.nativeElement.classList.remove('msgBlur');
     }, 1000);
   }
 
