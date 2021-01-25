@@ -13,7 +13,8 @@
   img {
     width: 100%;
     display: block;
-    object-fit: cover; /* new */
+    object-fit: cover;
+    max-height: rem(314);
   }
 
   & > * {
@@ -102,6 +103,10 @@
     margin-top: rem(54);
     margin-bottom: rem(96);
     row-gap: rem(80);
+
+    img {
+      max-height: rem(500);
+    }
 
     & > * {
       p {
