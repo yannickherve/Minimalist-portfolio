@@ -26,6 +26,10 @@
 
 .project_fylo_hero_img {
   grid-area: hero_img;
+
+  img {
+    max-height: rem(310);
+  }
 }
 
 .project_fylo_details {
@@ -81,6 +85,11 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: rem(32);
+
+        img {
+          max-height: rem(434);
+        }
+
       }
     }
   }
@@ -90,6 +99,13 @@
 @media #{$medium-up} {
   .project-fylo-container {
     margin-top: rem(54);
+  }
+
+  .project_manage_hero_img {
+    img {
+      min-height: rem(310);
+      max-height: rem(500);
+    }
   }
 
   .project_fylo_details {
@@ -118,6 +134,16 @@
         margin: 0;
       }
     }
+
+    .project_manage_body {
+      .project_manage_previews {
+        .previews_img {
+          img {
+            height: rem(434);
+          }
+        }
+      }
+    }
   }
 
 }
@@ -126,6 +152,10 @@
 @media #{$ExtraLarge-up} {
   .project-fylo-container {
     grid-gap: rem(115);
+
+    img {
+      max-height: rem(400);
+    }
   }
 
   .project_fylo_details {
@@ -158,6 +188,15 @@
       .project_fylo_previews {
         .previews-title {
           margin-bottom: rem(28);
+        }
+
+        .previews_img {
+
+          width: rem(635);
+
+          img {
+            max-height: rem(400);
+          }
         }
       }
     }

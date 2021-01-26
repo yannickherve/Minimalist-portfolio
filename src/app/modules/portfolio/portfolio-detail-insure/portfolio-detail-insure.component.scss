@@ -26,6 +26,10 @@
 
 .project_insure_hero_img {
   grid-area: hero_img;
+
+  img {
+    max-height: rem(310);
+  }
 }
 
 .project_insure_details {
@@ -81,6 +85,10 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: rem(32);
+
+        img {
+          max-height: rem(434);
+        }
       }
     }
   }
@@ -91,6 +99,14 @@
   .project-insure-container {
     margin-top: rem(54);
   }
+
+  .project_manage_hero_img {
+    img {
+      min-height: rem(310);
+      max-height: rem(500);
+    }
+  }
+
 
   .project_insure_details {
     grid-gap: rem(40);
@@ -116,6 +132,16 @@
       #view-website {
         grid-column: 1 / 2;
         margin: 0;
+      }
+    }
+
+    .project_manage_body {
+      .project_manage_previews {
+        .previews_img {
+          img {
+            height: rem(434);
+          }
+        }
       }
     }
   }
@@ -158,6 +184,15 @@
       .project_insure_previews {
         .previews-title {
           margin-bottom: rem(28);
+        }
+
+        .previews_img {
+
+          width: rem(635);
+
+          img {
+            max-height: rem(400);
+          }
         }
       }
     }
