@@ -1,13 +1,13 @@
-@import 'libs/variables';
-@import 'modules/icons';
-@import 'modules/buttons';
-@import 'libs/functions';
-@import 'libs/responsive';
+@import "libs/variables";
+@import "modules/icons";
+@import "modules/buttons";
+@import "libs/functions";
+@import "libs/responsive";
 
 .portfolio-container {
   display: grid;
   grid-template-rows: repeat(4, 688px);
-  grid-gap: rem(72);
+  row-gap: rem(72);
   margin-bottom: rem(80);
 
   img {
@@ -15,8 +15,7 @@
     display: block;
     object-fit: cover;
     min-height: rem(288);
-     max-height: rem(314);
-      
+    max-height: rem(314);
   }
 
   & > * {
@@ -31,7 +30,8 @@
   }
 }
 
-#bookmark-button, #manage-button span {
+#bookmark-button,
+#manage-button span {
   padding: rem(17) rem(32);
 }
 
@@ -92,7 +92,7 @@
 
 // very small 350px
 @media #{$extraSmall-up} {
-//
+  //
 }
 
 //768px
@@ -104,8 +104,9 @@
     row-gap: rem(80);
 
     img {
-      // max-height: rem(314);
-      // max-width:rem(339)
+      max-height: rem(500);
+      min-height: rem(314);
+      min-width: rem(339);
     }
 
     & > * {
@@ -180,8 +181,8 @@
 }
 
 //992px
-@media #{$large-up}  {
-//
+@media #{$large-up} {
+  //
 }
 
 //1200px
@@ -203,11 +204,13 @@
 
   .portfolio-manage {
     grid-template-columns: 540px 350px;
+    grid-template-rows: minmax(auto, 500px);
     grid-gap: rem(125);
     justify-content: start;
 
     .manage-body {
       max-height: 100%;
+      height: rem(500);
       padding-top: rem(103);
       padding-bottom: rem(103);
     }
@@ -215,11 +218,13 @@
 
   .portfolio-bookmark {
     grid-template-columns: 350px 540px;
+    grid-template-rows: minmax(auto, 500px);
     grid-gap: rem(125);
     justify-content: end;
 
     .bookmark-body {
       max-height: 100%;
+      height: rem(500);
       padding-top: rem(103);
       padding-bottom: rem(103);
     }
@@ -227,11 +232,13 @@
 
   .portfolio-insure {
     grid-template-columns: 540px 350px;
+    grid-template-rows: minmax(auto, 500px);
     grid-gap: rem(125);
     justify-content: start;
 
     .insure-body {
       max-height: 100%;
+      height: rem(500);
       padding-top: rem(103);
       padding-bottom: rem(103);
 
@@ -243,11 +250,13 @@
 
   .portfolio-fylo {
     grid-template-columns: 350px 540px;
+    grid-template-rows: minmax(auto, 500px);
     grid-gap: rem(125);
     justify-content: end;
 
     .fylo-body {
       max-height: 100%;
+      height: rem(500);
       padding-top: rem(103);
       padding-bottom: rem(103);
 
@@ -261,7 +270,5 @@
 
 //1440px
 @media #{$XExtraLarge-up} {
-//
+  //
 }
-
-
