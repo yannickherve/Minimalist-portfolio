@@ -31,9 +31,10 @@
     max-width: rem(104);
     height: rem(24);
 
-    & a {
-      transition: background-color .6s, color .6s;
+    .touch-socials-icons {
+      transition: fill .3s;
     }
+
     & a:hover {
       color: $color-primary-cyan;
 
